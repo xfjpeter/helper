@@ -14,5 +14,6 @@
         "psr-4": {
             "tinyphp\\helper\\": "/src"
         }
-    }
+    }，
+    "minimum-stability":"dev"
 }
