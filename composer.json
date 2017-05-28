@@ -1,0 +1,18 @@
+{
+    "name": "tinyphp/helper",
+    "description": "tinyphp helper",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "johnxu",
+            "email": "fsyzxz@163.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "tinyphp\\helper\\": "/src"
+        }
+    }
+}
