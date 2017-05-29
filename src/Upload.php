@@ -56,7 +56,7 @@ class Upload
     /**
      * 初始化
      * @param array $config 配置参数
-     * @return \tinyphp\Upload
+     * @return \tinyphp\helper\Upload
      */
     static public function getInstance($config = array())
     {
@@ -70,7 +70,7 @@ class Upload
     /**
      * 上传文件（单个）
      * @param string $fileObjName 表单中file字段的name值
-     * @return \tinyphp\Upload|bool
+     * @return \tinyphp\helper\Upload|bool
      */
     public function save($fileObjName)
     {

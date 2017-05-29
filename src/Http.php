@@ -34,7 +34,7 @@ class Http
      * @param array   $opt
      * @param string  $method
      *
-     * @return \tinyphp\Http
+     * @return \tinyphp\helper\Http
      */
     public static function exec($uri, $params = array(), $header = array('Expect:'), $opt = array(), $method = 'get')
     {

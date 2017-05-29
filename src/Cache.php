@@ -35,7 +35,7 @@ class Cache
     /**
      * 初始化类
      * @param array $config 配置文件
-     * @return \tinyphp\Cache
+     * @return \tinyphp\helper\Cache
      */
     static public final function getInstance($config = array())
     {
@@ -51,7 +51,7 @@ class Cache
      * @param string $key
      * @param mixed  $value
      * @param int    $expire
-     * @return \tinyphp\Cache
+     * @return \tinyphp\helper\Cache
      */
     public function write($key, $value, $expire = 10)
     {

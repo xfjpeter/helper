@@ -33,7 +33,7 @@ class Image
      * @method __construct
      * @param  array $option 配置文件参数设置
      */
-    protected function __construct(array $option = array())
+    private function __construct(array $option = array())
     {
         if (!empty($option)) {
             foreach ($option as $key => $item) {
@@ -55,7 +55,7 @@ class Image
      * 初始化
      * @method getInstance
      * @param  array $option 配置文件参数设置
-     * @return \tinyphp\Image
+     * @return \tinyphp\helper\Image
      */
     public static function getInstance(array $option = array())
     {
@@ -72,7 +72,7 @@ class Image
      * @param int    $width      缩略图宽度
      * @param int    $height     缩略图高度
      * @param bool   $zoom       是否等比缩放，true等比，false固定缩放
-     * @return \tinyphp\Image|bool
+     * @return \tinyphp\helper\Image|bool
      */
     public function thumb($originPath, $width = 300, $height = 300, $zoom = true)
     {
@@ -153,7 +153,7 @@ class Image
      * 图片翻转
      * @param string $originPath 需要翻转的图片路径
      * @param string $mode       翻转类型（x：水平翻转，y：垂直翻转）
-     * @return \tinyphp\Image|bool
+     * @return \tinyphp\helper\Image|bool
      */
     public function flip($originPath, $mode = 'y')
     {

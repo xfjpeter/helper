@@ -143,10 +143,11 @@ class Request
 
     /**
      * 获取客户端IP地址
-     * @return mixed
+     * @return string
      */
     public static function getClientIp()
     {
+        $realip = '';
         if (isset($_SERVER)) {
             if (isset($_SERVER["HTTP_X_FORWARDED_FOR"])) {
                 $realip = $_SERVER["HTTP_X_FORWARDED_FOR"];

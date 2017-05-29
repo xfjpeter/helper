@@ -12,7 +12,7 @@ class Zip extends \ZipArchive
 
     /**
      * 初始化
-     * @return \tinyphp\Zip
+     * @return \tinyphp\helper\Zip
      */
     static public function getInstance()
     {
